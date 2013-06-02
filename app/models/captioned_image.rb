@@ -4,7 +4,7 @@ class CaptionedImage < ActiveRecord::Base
 
   def image_url
     SimpleMemeCaptainClient.captioned_image_url(u: source_image.url,
-                                     t1: text_top,
-                                     t2: text_bottom)
+                                                t1: text_top,
+                                                t2: text_bottom)
   end
 end
