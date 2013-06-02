@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :source_image_id %> (not a URL for now, use the ID)<br />
-    <%= f.number_field :source_image_id %>
+    <%= f.number_field :source_image_id, :value => params[:source_image_id] %>
   </div>
   <div class="field">
     <%= f.label :title %><br />
