@@ -15,3 +15,7 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap_helper' # http://stackoverflow.com/questions/16114539/bootstrap-and-rails-issue-with-heroku-deployment
 end
+
+group :test do
+  gem 'rspec'
+end
