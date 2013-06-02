@@ -1,5 +1,5 @@
 AnimalCenter::Application.routes.draw do
-  resources :captioned_images
+  resources :captioned_images, :source_images
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
