@@ -42,34 +42,30 @@ Within your clone:
 Now you are SSHed into your guest Vagrant virtual machine.  Now you can run these commands:
 
     cd /vagrant
-    bundle
+    bundle install
     # Unfortunately, the Vagrant box doesn't come with a PosgreSQL user by default.
     sudo su postgres -c 'createuser --createdb --no-superuser --no-createrole vagrant'
-    bundle exec rake db:create
-    bundle exec rake db:schema:load
+    rake db:create
+    rake db:schema:load
 
 **Not using Vagrant?**  The steps above are stil basically what you need to do, but without the Vagrant specific parts:
 
-    bundle
+    bundle install
     # configure config/database.yml by hand
     bundle exec rake db:create
     bundle exec rake db:schema:load
 
-Now you can run the app:
+Now the automated tests should pass:
 
-    bundle exec rails server
+    rake
+
+So now you can run the app:
+
+    rails server
 
 And open it in your browser:  [http://localhost:3000/](http://localhost:3000/)
 
-You can now make changes to the code to your heart's content.  **Happy hacking!**
-
-### Style
-
-Ruby code should generally follow the [community Ruby Style guide](https://github.com/bbatsov/ruby-style-guide).  If you're writing tests, `rspec` is recommended.
-
-JavaScript or CoffeeScript, your pick.
-
-[Git Flow](https://github.com/nvie/gitflow) is recommended, but not required.  The development branch is `master` and the release branch is `stable`.
+At this point, you can make changes to the code to your heart's content.  **Happy hacking!**
 
 ### Patches/Pull Requests
 
@@ -80,6 +76,14 @@ JavaScript or CoffeeScript, your pick.
 * Open a pull request. Bonus points for topic branches (see `git flow`).
 
 Thanks for your contributions!
+
+### Style
+
+Ruby code should generally follow the [community Ruby Style guide](https://github.com/bbatsov/ruby-style-guide).  If you're writing tests, `rspec` is recommended.
+
+JavaScript over CoffeeScript, please.  JavaScript is known by more developers -- especially those outside the Rails world.
+
+[Git Flow](https://github.com/nvie/gitflow) is recommended, but not required.  The development branch is `master` and the release branch is `stable`.
 
 ## Deploying
 
