@@ -14,7 +14,7 @@ From a technical standpoint, it's a [Ruby](http://ruby-lang.org/)/[Rails](http:/
 
 ## Contributing
 
-We're happy to hear you'd like to help out!  There are [issues organized by milestone](https://github.com/OpenHackIC/animal_center/issues/milestones) and labelled with difficulty (most are "easy") and technologies you need to know (such as "html", "js", or "ruby").
+We're happy to hear you'd like to help out!  There are [issues organized by milestone](https://github.com/OpenHackIC/animal_center/issues/milestones) and labelled with difficulty (most are "easy") and technologies you need to know (such as "html", "js", or "ruby").  There's a [mockup in the wiki](https://github.com/OpenHackIC/animal_center/wiki).
 
 A quick crash course for designers and web developers unfamiliar with Rails:
 
