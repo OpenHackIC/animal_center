@@ -59,7 +59,7 @@ Now you can run the app:
 
     bundle exec rails server
 
-And open it in your browser:  http://localhost:3000/
+And open it in your browser:  [http://localhost:3000/](http://localhost:3000/)
 
 You can now make changes to the code to your heart's content.  **Happy hacking!**
 
