@@ -57,11 +57,11 @@ Now you are SSHed into your guest Vagrant virtual machine.  Now you can run thes
 
 Now the automated tests should pass:
 
-    rake
+    bundle exec rake
 
 So now you can run the app:
 
-    rails server
+    bundle exec rails server
 
 And open it in your browser:  [http://localhost:3000/](http://localhost:3000/)
 
