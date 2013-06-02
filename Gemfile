@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'addressable'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.13'
