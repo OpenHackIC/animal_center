@@ -81,6 +81,10 @@ JavaScript or CoffeeScript, your pick.
 
 Thanks for your contributions!
 
+## Deploying
+
+[Benjamin Oakes](https://github.com/benjaminoakes) has the keys for deployment.  Need something to go out?  Please [make an issue](https://github.com/OpenHackIC/animal_center/issues/new).
+
 ## License
 
 GPLv2. See LICENSE for a copy.
