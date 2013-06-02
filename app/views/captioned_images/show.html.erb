@@ -1,0 +1,7 @@
+<article>
+<h2><%= @captioned_image.title %></h2>
+<%= image_tag @captioned_image.image_url %>
+</article>
+
+<%= link_to 'Edit', edit_captioned_image_path(@captioned_image) %> |
+<%= link_to 'Back', captioned_images_path %>
