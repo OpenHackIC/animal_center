@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'addressable'
 gem 'jquery-rails'
+gem 'mechanize'
 gem 'pg'
 gem 'rails', '3.2.13'
 gem 'unicorn'
