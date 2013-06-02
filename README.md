@@ -48,7 +48,7 @@ Now you are SSHed into your guest Vagrant virtual machine.  Now you can run thes
     bundle exec rake db:create
     bundle exec rake db:schema:load
 
-Not using Vagrant?  The steps above are stil basically what you need to do, but without the Vagrant specific parts:
+**Not using Vagrant?**  The steps above are stil basically what you need to do, but without the Vagrant specific parts:
 
     bundle
     # configure config/database.yml by hand
