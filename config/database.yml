@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   host: localhost
   database: animal_center_development
-  username: vagrant
+  username: postgres
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -12,7 +12,7 @@ test:
   adapter: postgresql
   host: localhost
   database: animal_center_test
-  username: vagrant
+  username: postgres
   password:
 
 # Not actually used in production, but rather just for asset compilation.
@@ -20,5 +20,5 @@ production:
   adapter: postgresql
   host: localhost
   database: animal_center_production
-  username: vagrant
+  username: postgres
   password:

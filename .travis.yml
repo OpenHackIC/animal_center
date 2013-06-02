@@ -1,2 +1,4 @@
 rvm:
   - 1.9.2
+before_script:
+  - psql -c 'create database animal_center_test;' -U postgres
