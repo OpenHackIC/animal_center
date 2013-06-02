@@ -7,4 +7,9 @@ class CaptionedImage < ActiveRecord::Base
                                                 t1: text_top,
                                                 t2: text_bottom)
   end
+                                                
+  def to_param
+    "#{id}-#{title.parameterize}"
+  end
+
 end
