@@ -1,0 +1,33 @@
+<%= form_for(@captioned_image) do |f| %>
+  <% if @captioned_image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@captioned_image.errors.count, "error") %> prohibited this captioned_image from being saved:</h2>
+
+      <ul>
+      <% @captioned_image.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :source_image_id %><br />
+    <%= f.number_field :source_image_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text_top %><br />
+    <%= f.text_field :text_top %>
+  </div>
+  <div class="field">
+    <%= f.label :text_bottom %><br />
+    <%= f.text_field :text_bottom %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

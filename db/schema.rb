@@ -11,6 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130602032339) do
+
+  create_table "captioned_images", :force => true do |t|
+    t.integer  "source_image_id"
+    t.string   "title"
+    t.string   "text_top"
+    t.string   "text_bottom"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "source_images", :force => true do |t|
+    t.string   "category"
+    t.string   "url"
+    t.integer  "external_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
 end
