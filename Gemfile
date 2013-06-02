@@ -13,4 +13,5 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer'
   gem 'twitter-bootstrap-rails'
+  gem 'bootstrap_helper' # http://stackoverflow.com/questions/16114539/bootstrap-and-rails-issue-with-heroku-deployment
 end
