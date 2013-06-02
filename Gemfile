@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'addressable'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.13'
@@ -14,4 +15,8 @@ group :assets do
   gem 'therubyracer'
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap_helper' # http://stackoverflow.com/questions/16114539/bootstrap-and-rails-issue-with-heroku-deployment
+end
+
+group :test do
+  gem 'rspec'
 end
