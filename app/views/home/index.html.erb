@@ -1,6 +1,8 @@
-<a href="http://placekitten.com/"><img src="http://placekitten.com/g/200/300" /></a>
-
 <h1>Meow, world!</h1>
+
+<p>
+There's not much to see right now, but you can <a href="https://github.com/OpenHackIC/animal_center">contribute on GitHub</a> if you'd like.
+</p>
 
 <% demo_images = %w(
 http://v1.memecaptain.com/i?u=http%3A%2F%2Ficanimalcenter.org%2FanimalImages%2F2050_0_f.jpg&t1=grumpy%20cat%3F&t2=i%27m%20happy%20cat
@@ -9,9 +11,5 @@ http://v1.memecaptain.com/i?u=http%3A%2F%2Ficanimalcenter.org%2FanimalImages%2F2
 ) %>
 
 <% demo_images.each do |url| %>
-  <%= image_tag url %>
+  <article><%= image_tag url %></article>
 <% end %>
-
-<p>
-There's not much to see right now, but you can <a href="https://github.com/OpenHackIC/animal_center">contribute on GitHub</a> if you'd like.
-</p>
