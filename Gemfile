@@ -17,6 +17,6 @@ group :assets do
   gem 'bootstrap_helper' # http://stackoverflow.com/questions/16114539/bootstrap-and-rails-issue-with-heroku-deployment
 end
 
-group :test do
-  gem 'rspec'
+group :development do
+  gem 'rspec-rails'
 end
