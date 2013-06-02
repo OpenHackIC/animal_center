@@ -1,8 +1,8 @@
 # animal_center
 
-For the National Day of Civic Hacking 2013
+For the National Day of Civic Hacking 2013.
 
-## What is it?
+## What Is It?
 
 It's an open source webapp to help the [Iowa City Animal Center](http://www.icanimalcenter.org/) increase their adoption rate.  (Cats in particular don't get adopted as often as dogs, for example.)
 
@@ -12,7 +12,7 @@ It will be a simple app that allows images of animals up for adoption to be easy
 
 From a technical standpoint, it's a [Ruby](http://ruby-lang.org/)/[Rails](http://rubyonrails.org/) app using [Bootstrap](http://twitter.github.io/bootstrap/) and some JavaScript, among other technologies.  It's hosted on [Heroku](http://heroku.com/) because they're great at making web apps easy to deploy.  They were also kind enough to donate money for hosting (in addition to their free level of hosting), and other sponsorship of the [National Day of Civic Hacking in Iowa City](http://www.meetup.com/Iowa-Open-Source-Hardware-meetup/events/120069522/).
 
-## Getting Started
+## Contributing
 
 We're happy to hear you'd like to help out!  There are [issues organized by milestone](https://github.com/OpenHackIC/animal_center/issues/milestones) and labelled with difficulty (most are "easy") and technologies you need to know (such as "html", "js", or "ruby").
 
@@ -63,7 +63,7 @@ And open it in your browser:  [http://localhost:3000/](http://localhost:3000/)
 
 You can now make changes to the code to your heart's content.  **Happy hacking!**
 
-## Contributing
+### Style
 
 Ruby code should generally follow the [community Ruby Style guide](https://github.com/bbatsov/ruby-style-guide).  If you're writing tests, `rspec` is recommended.
 
