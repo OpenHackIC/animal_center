@@ -1,25 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Source image:</b>
-  <%= @captioned_image.source_image_id %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%= @captioned_image.title %>
-</p>
-
-<p>
-  <b>Text top:</b>
-  <%= @captioned_image.text_top %>
-</p>
-
-<p>
-  <b>Text bottom:</b>
-  <%= @captioned_image.text_bottom %>
-</p>
-
+<article>
+<h2><%= @captioned_image.title %></h2>
+<%= image_tag @captioned_image.image_url %>
+</article>
 
 <%= link_to 'Edit', edit_captioned_image_path(@captioned_image) %> |
 <%= link_to 'Back', captioned_images_path %>
