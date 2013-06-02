@@ -50,6 +50,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    high_voltage (1.2.2)
     hike (1.2.2)
     http-cookie (1.0.1)
       domain_name (~> 0.5)
@@ -165,6 +166,7 @@ DEPENDENCIES
   addressable
   bootstrap_helper
   coffee-rails (~> 3.2.1)
+  high_voltage
   jquery-rails
   less-rails
   mechanize
