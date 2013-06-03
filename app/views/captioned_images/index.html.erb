@@ -1,3 +1,5 @@
 <% @captioned_images.each do |captioned_image| %>
   <%= render captioned_image %>
 <% end %>
+
+<%= will_paginate @captioned_images, :renderer => BootstrapPagination::Rails %>
