@@ -2,9 +2,13 @@ source 'https://rubygems.org'
 
 gem 'addressable'
 gem 'jquery-rails'
+gem 'mechanize'
 gem 'pg'
 gem 'rails', '3.2.13'
 gem 'unicorn'
+gem 'high_voltage'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,6 +21,6 @@ group :assets do
   gem 'bootstrap_helper' # http://stackoverflow.com/questions/16114539/bootstrap-and-rails-issue-with-heroku-deployment
 end
 
-group :development do
+group :development, :test do
   gem 'rspec-rails'
 end

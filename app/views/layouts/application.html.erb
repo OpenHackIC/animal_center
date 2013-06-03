@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "AnimalCenter" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "AdoptaLOL" %></title>
     <%= csrf_meta_tags %>
 
     <% if Rails.env.production? %>
@@ -41,11 +41,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <%= link_to 'Animal Center', root_path, class: 'brand' %>
+          <%= link_to 'AdoptaLOL', root_path, class: 'brand' %>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to 'About', 'https://github.com/OpenHackIC/animal_center/issues/21'  %></li>
+              <li><%= link_to 'About', page_path('about') %></li>
             </ul>
+            <div class="nav pull-right">
+              <%= link_to 'Caption an adoptable pet!', source_images_path, class: 'btn btn-success' %>
+            </div>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -60,7 +63,7 @@
       </div><!--/row-->
 
       <footer>
-        <p><a href="https://github.com/OpenHackIC/animal_center/issues/28">TODO: Add footer</a></p>
+        <p><small>Content licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.  Code licensed under an <a href="https://github.com/OpenHackIC/animal_center">open source GPL license</a>.</small></p>
       </footer>
 
     </div> <!-- /container -->
@@ -69,6 +72,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   </body>
 </html>

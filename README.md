@@ -2,6 +2,8 @@
 
 For the National Day of Civic Hacking 2013.
 
+[![Build Status](https://travis-ci.org/OpenHackIC/animal_center.png?branch=master)](https://travis-ci.org/OpenHackIC/animal_center)
+
 ## What Is It?
 
 It's an open source webapp to help the [Iowa City Animal Center](http://www.icanimalcenter.org/) increase their adoption rate.  (Cats in particular don't get adopted as often as dogs, for example.)
@@ -43,8 +45,6 @@ Now you are SSHed into your guest Vagrant virtual machine.  Now you can run thes
 
     cd /vagrant
     bundle install
-    # Unfortunately, the Vagrant box doesn't come with a PosgreSQL user by default.
-    sudo su postgres -c 'createuser --createdb --no-superuser --no-createrole vagrant'
     rake db:create
     rake db:schema:load
 
@@ -57,11 +57,11 @@ Now you are SSHed into your guest Vagrant virtual machine.  Now you can run thes
 
 Now the automated tests should pass:
 
-    rake
+    bundle exec rake
 
 So now you can run the app:
 
-    rails server
+    bundle exec rails server
 
 And open it in your browser:  [http://localhost:3000/](http://localhost:3000/)
 

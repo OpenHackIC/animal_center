@@ -1,29 +1,5 @@
-<h1>Listing captioned_images</h1>
-
-<table>
-  <tr>
-    <th>Source image</th>
-    <th>Title</th>
-    <th>Text top</th>
-    <th>Text bottom</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @captioned_images.each do |captioned_image| %>
-  <tr>
-    <td><%= captioned_image.source_image_id %></td>
-    <td><%= captioned_image.title %></td>
-    <td><%= captioned_image.text_top %></td>
-    <td><%= captioned_image.text_bottom %></td>
-    <td><%= link_to 'Show', captioned_image %></td>
-    <td><%= link_to 'Edit', edit_captioned_image_path(captioned_image) %></td>
-    <td><%= link_to 'Destroy', captioned_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <%= render captioned_image %>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New Captioned image', new_captioned_image_path %>
+<%= will_paginate @captioned_images, :renderer => BootstrapPagination::Rails %>

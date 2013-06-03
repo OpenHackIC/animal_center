@@ -1,0 +1,12 @@
+<article>
+  <h3><%= link_to captioned_image.title, captioned_image %></h3>
+  <div>
+  <%= link_to image_tag(captioned_image.image_url, alt: captioned_image.title, class: 'img-polaroid'), captioned_image %>
+  </div>
+  <p>
+  <%= link_to 'Adoption Info', captioned_image.adoption_info_url, class: 'btn btn-info' %>
+  <br />
+  <%# TODO: extract into presenter %>
+  <%= link_to 'Tweet', 'https://twitter.com/share', class: "twitter-share-button", data: { lang: 'en', size: 'large', dnt: 'true', text: captioned_image.title, hashtags: 'adoptaLOL', url: captioned_image_url(captioned_image) } %>
+  </p>
+</article>
