@@ -7,6 +7,8 @@ gem 'pg'
 gem 'rails', '3.2.13'
 gem 'unicorn'
 gem 'high_voltage'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 # Gems used only for assets and not required
 # in production environments by default.
