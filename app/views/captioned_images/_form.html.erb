@@ -11,10 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :source_image_id %> (not a URL for now, use the ID)<br />
-    <%= f.number_field :source_image_id, :value => params[:source_image_id] %>
-  </div>
+  <%= f.hidden_field :source_image_id, :value => params[:source_image_id] %>
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
