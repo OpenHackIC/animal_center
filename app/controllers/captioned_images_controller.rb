@@ -2,7 +2,7 @@ class CaptionedImagesController < ApplicationController
   # GET /captioned_images
   # GET /captioned_images.json
   def index
-    @captioned_images = CaptionedImage.paginate(page: params[:page], per_page: 10)
+    @captioned_images = CaptionedImage.order('created_at desc').paginate(page: params[:page], per_page: 10)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -39,7 +39,7 @@ class CaptionedImagesController < ApplicationController
 
     respond_to do |format|
       if @captioned_image.save
-        format.html { redirect_to @captioned_image, notice: 'Captioned image was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Captioned image was successfully created.' }
         format.json { render json: @captioned_image, status: :created, location: @captioned_image }
       else
         format.html { render action: "new" }
