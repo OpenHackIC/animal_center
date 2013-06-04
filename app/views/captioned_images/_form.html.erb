@@ -1,4 +1,4 @@
-<%= form_for(@captioned_image) do |f| %>
+<%= form_for [@captioned_image.source_image, @captioned_image], html: { class: "row form-horizontal" } do |f| %>
   <% if @captioned_image.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@captioned_image.errors.count, "error") %> prohibited this captioned_image from being saved:</h2>
@@ -11,20 +11,23 @@
     </div>
   <% end %>
 
-  <%= f.hidden_field :source_image_id, :value => params[:source_image_id] %>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :text_top %><br />
-    <%= f.text_field :text_top %>
-  </div>
-  <div class="field">
-    <%= f.label :text_bottom %><br />
-    <%= f.text_field :text_bottom %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <img src="<%= @source_image.url %>" class="img-polaroid span4"/>
+
+  <div class="span5"><% f.with_options class: 'control-label' do |l| %>
+    <div class="field control-group">
+      <%= l.label :title %>
+      <div class="controls"><%= f.text_field :title %></div>
+    </div>
+    <div class="field control-group">
+      <%= l.label :text_top %>
+      <div class="controls"><%= f.text_field :text_top, placeholder: 'I CAN HAZ' %></div>
+    </div>
+    <div class="field control-group">
+      <%= l.label :text_bottom %>
+      <div class="controls"><%= f.text_field :text_bottom, placeholder: 'ADOPSHUN?' %></div>
+    </div>
+    <div class="actions control-group">
+      <div class="controls"><%= l.submit class: "btn btn-primary" %></div>
+    </div>
+  <% end %></div>
 <% end %>
