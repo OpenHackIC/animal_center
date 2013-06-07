@@ -1,3 +1,13 @@
+<% if show_hero_unit? %>
+<div class="hero-unit">
+  <h1>AdoptLOL</h1>
+  <p>Help Iowa City animals get adopted... just add lols!</p>
+  <p>
+  <%= link_to 'Caption an adoptable pet!', source_images_path, class: 'btn btn-success btn-large' %>
+  </p>
+</div>
+<% end %>
+
 <% @captioned_images.each do |captioned_image| %>
   <%= render captioned_image %>
 <% end %>
